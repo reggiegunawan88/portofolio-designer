@@ -1,0 +1,30 @@
+<div class="flex flex-row text-defaultGray justify-between font-bold mx-8 my-9 laptopM:hidden">
+  <div class="flex flex-row gap-x-3 items-center text-lg cursor-pointer" @click="toggleSidebar">
+    <font-awesome-icon :icon="['fas', 'bars']" />
+    <p>Menu</p>
+  </div>
+  <div class="flex flex-row gap-x-10 items-center text-2xl">
+    <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+    <font-awesome-icon :icon="['fab', 'dribbble']" />
+  </div>
+
+  <!-- slider-content -->
+  <div v-if="sidebarOpened" class="w-4/5 fixed top-0 bottom-0 left-0 border-r-default border-grey-30 z-50 bg-white">
+    <div class="flex flex-col text-defaultGray font-sans mx-6 mt-6">
+      <div class="flex self-end cursor-pointer" @click="toggleSidebar">
+        <img src="~/assets/icon/close-times.svg" />
+      </div>
+      <div class="flex flex-col gap-y-10 mx-8 mt-7">
+        <div class="flex flex-col text-blueHeading gap-y-1">
+          <p class="text-xl font-bold">Clara Sonya Aritonang</p>
+          <p class="text-sm font-thin">UI UX Designer</p>
+        </div>
+        <div class="flex flex-col gap-y-10 font-bold text-lg">
+          <NuxtLink to="/"> Works </NuxtLink>
+          <NuxtLink to="/"> About </NuxtLink>
+          <NuxtLink to="/"> Resume </NuxtLink>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

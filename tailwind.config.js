@@ -1,15 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: {
-    content: [
-      './components/**/*.vue',
-      './components/**/*.html',
-      './layouts/*.vue',
-      './pages/**/*.vue',
-      './pages/**/*.html',
-      './pages/**/**/*.vue',
-      './pages/**/**/*.html',
-    ],
+    content: ['./components/**/*.vue', './components/**/*.html', './layouts/*.vue', './pages/**/*.vue', './pages/**/*.html', './pages/**/**/*.vue', './pages/**/**/*.html'],
     whitelist: ['blue-royal'],
   },
   theme: {
@@ -37,6 +29,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      white: '#FFFFFF',
+
+      defaultGray: '#666666',
+      blueHeading: '#5768A3',
 
       'blue-royal': {
         10: '#E1F0FF',

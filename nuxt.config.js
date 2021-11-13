@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'porto-designer',
+    title: 'Clara Sonya - Product Designer',
     htmlAttrs: {
       lang: 'en',
     },

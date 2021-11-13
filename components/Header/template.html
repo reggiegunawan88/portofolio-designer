@@ -1,0 +1,22 @@
+<header class="h-[fit-content] w-full fixed shadow-md">
+  <!-- mobile version -->
+  <header-mobile />
+  <!-- tablet or higher version -->
+  <div class="hidden laptopM:block max-w-3xl mx-auto">
+    <div class="grid grid-cols-3 text-defaultGray justify-between font-bold mx-8 my-6">
+      <div class="flex flex-row gap-x-10 text-lg items-center">
+        <NuxtLink to="/"> Works </NuxtLink>
+        <NuxtLink to="/"> About </NuxtLink>
+        <NuxtLink to="/"> Resume </NuxtLink>
+      </div>
+      <div class="flex flex-col text-blueHeading gap-y-1 text-center">
+        <p class="text-xl font-bold">Clara Sonya Aritonang</p>
+        <p class="text-sm font-thin">UI UX Designer</p>
+      </div>
+      <div class="flex flex-row gap-x-10 items-center text-2xl justify-self-end">
+        <font-awesome-icon :icon="['fab', 'linkedin-in']" @click="redirectLinkedin" />
+        <font-awesome-icon :icon="['fab', 'dribbble']" @click="redirectDribbble" />
+      </div>
+    </div>
+  </div>
+</header>
