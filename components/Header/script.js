@@ -16,5 +16,8 @@ export default Vue.extend({
     redirectDribbble() {
       window.open('https://dribbble.com/clarasonya', '_blank')
     },
+    openResume() {
+      window.open('https://drive.google.com/file/d/1Tkk0b8_wZ1Cwp2PsQ5NnTXIjXhEnpqSs/view', '_blank')
+    },
   },
 })
