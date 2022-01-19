@@ -1,1 +1,60 @@
-<div></div>
+<div class="pt-40 mb-10 w-full">
+  <div class="flex flex-col max-w-xl mx-auto gap-y-32">
+    <!-- title -->
+    <interactive-game-title />
+
+    <!-- background -->
+    <div class="flex flex-col gap-y-7 text-defaultGray mx-4">
+      <p class="text-gray-600 text-4xl font-bold">Background</p>
+      <div class="mx-6">
+        <p class="text-lg leading-10">
+          Interactive article is Kompas premium product which published monthly usually contain infographic article, interactive web, and even a mini game. On this occasion, apart from the game design
+          aspect and the business aspect, I am also responsible for leading the entire UX & UI process of this interactive game.
+        </p>
+      </div>
+    </div>
+
+    <!-- product vision -->
+    <interactive-game-product-vision />
+    <!-- target & success indicator -->
+    <interactive-game-target-indicator />
+    <!-- keypain points -->
+    <interactive-game-keypain-points />
+    <!-- design concept -->
+    <interactive-game-design-concept />
+    <!-- balancing user needs -->
+    <interactive-game-balancing-user-needs />
+    <!-- concept flow -->
+    <interactive-game-concept-flow />
+    <!-- execution: wireflow -->
+    <interactive-game-execution-wireflow />
+    <!-- execution: high fidelity -->
+    <interactive-game-execution-fidelity />
+    <!-- post event impact-->
+    <interactive-game-post-event />
+  </div>
+
+  <!-- button link -->
+  <div class="flex flex-row justify-between max-w-xl mx-auto mt-31">
+    <!-- prev btn -->
+    <button @click="$router.push('/')">
+      <div class="flex flex-col text-gray-600">
+        <div class="flex flex-row items-center gap-x-5 text-4xl">
+          <font-awesome-icon :icon="['fas', 'arrow-left']" />
+          <p>HOME</p>
+        </div>
+        <p class="text-sm self-end">Back to Works</p>
+      </div>
+    </button>
+    <!-- home btn -->
+    <button @click="$router.push('/account-management')">
+      <div class="flex flex-col text-gray-600">
+        <div class="flex flex-row items-center gap-x-5 text-4xl">
+          <p>NEXT</p>
+          <font-awesome-icon :icon="['fas', 'arrow-right']" />
+        </div>
+        <p class="text-sm self-start">Go to Account Management</p>
+      </div>
+    </button>
+  </div>
+</div>
